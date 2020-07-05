@@ -5,8 +5,8 @@ const twinId = str => [...str]
     .join('');
 const Twins = (a, b) => a.map((s, i) => twinId(s) == twinId(b[i])? 'Yes': 'No');
 
-let string1 = ["abcd", "abcd", "abcd"]
-let string2 = ["cdab", "bcda", "adcb"]
+let string1 = ["abcd", "abcd", "abc"]
+let string2 = ["cdab", "bcda", "ab"]
 
 let result = Twins(string1, string2)
 document.write(result)
